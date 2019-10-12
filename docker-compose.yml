@@ -5,4 +5,4 @@ services:
     image: ${DOCKER_REGISTRY-}productmicroservice
     build:
       context: .
-      dockerfile: ProductMicroservice\Dockerfile
+      dockerfile: ProductMicroservice/Dockerfile
