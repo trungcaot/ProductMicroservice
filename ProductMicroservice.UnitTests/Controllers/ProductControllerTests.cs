@@ -1,12 +1,8 @@
-﻿using ProductMicroservice.Controllers;
-using ProductMicroservice.UnitTests.MockRepositories;
-using Microsoft.AspNetCore.Mvc;
-using System;
-using System.Collections.Generic;
-using System.Text;
-using Xunit;
-using ProductMicroservice.UnitTests.MockRepositories;
+﻿using Microsoft.AspNetCore.Mvc;
 using Moq;
+using ProductMicroservice.Controllers;
+using ProductMicroservice.UnitTests.MockRepositories;
+using Xunit;
 
 namespace ProductMicroservice.UnitTests.Controllers
 {

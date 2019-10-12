@@ -1,13 +1,14 @@
 ﻿using Moq;
 using ProductMicroservice.Models;
 using ProductMicroservice.Repository;
-using System;
 using System.Collections.Generic;
-using System.Text;
-using Moq;
 
 namespace ProductMicroservice.UnitTests.MockRepositories
 {
+    /// <summary>
+    /// Try working with Mock by new approach as link below.
+    /// https://medium.com/webcom-engineering-and-product/a-cleaner-way-to-create-mocks-in-net-6e039c3d1db0
+    /// </summary>
     public class MockProductRepository : Mock<IProductRepository>
     {
         public MockProductRepository MockGetProducts()
