@@ -17,22 +17,3 @@ dotnet test ProductMicroservice.UnitTests.csproj /p:CollectCoverage=true /p:Cove
 ```
 
 The result will be collected in a coverage.coverlet.xml file in the ProductMicroservice.UnitTests directory.
-
-
-Test Run Successful.
-Test execution time: 5.3307 Seconds
-
-Calculating coverage result...
-  Generating report 'BuildReports\Coverage\.opencover.xml'
-
-+---------------------+--------+--------+--------+
-| Module              | Line   | Branch | Method |
-+---------------------+--------+--------+--------+
-| ProductMicroservice | 1.2%   | 0%     | 2.9%   |
-+---------------------+--------+--------+--------+
-
-+---------+--------+--------+--------+
-|         | Line   | Branch | Method |
-+---------+--------+--------+--------+
-| Average | 1.2%   | 0%     | 2.9%   |
-+---------+--------+--------+--------+
