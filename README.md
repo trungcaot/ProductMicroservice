@@ -28,4 +28,4 @@ If you want to generate report, you can also install the following command.
 
 Once you run commands is completed then open index.html file in BuildReports\Coverage will display as image below.
 
-[<img src="https://i.ibb.co/FDxfL5j/report-code-coverage.png" alt="report-code-coverage" border="0"/>]
+[<img src="https://i.ibb.co/tJmNTqW/report-code-coverage.png" alt="report-code-coverage" border="0"/>]
