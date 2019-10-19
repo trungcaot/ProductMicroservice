@@ -9,7 +9,7 @@ Building a ProductMicroservice project and intergate it with some new technologi
 You need to install some require external packages for GraphQL as the following:
 
 - [GraphQL](https://www.nuget.org/packages/GraphQL/2.4.0)
-- [GraphQL.Server.Transports.AspNetCore] (https://www.nuget.org/packages/GraphQL.Server.Transports.AspNetCore/3.4.0)
+- [GraphQL.Server.Transports.AspNetCore](https://www.nuget.org/packages/GraphQL.Server.Transports.AspNetCore/3.4.0)
 - [GraphQL.Server.Ui.Playground](https://www.nuget.org/packages/GraphQL.Server.Ui.Playground/3.4.0)
 
 To getting started with GraphQL in ASP .NET Core, visit the [GraphQL ASP.NET Core Tutorial](https://code-maze.com/graphql-asp-net-core-tutorial/)
