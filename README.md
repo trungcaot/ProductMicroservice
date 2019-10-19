@@ -17,3 +17,14 @@ dotnet test ProductMicroservice.UnitTests.csproj /p:CollectCoverage=true /p:Cove
 ```
 
 The result will be collected in a coverage.coverlet.xml file in the ProductMicroservice.UnitTests directory.
+
+If you want to generate report, you can also install the following command.
+
+```
+- dotnet tool install -g dotnet-reportgenerator-globaltool
+- dotnet test ProductMicroservice.UnitTests.csproj /p:CollectCoverage=true /p:CoverletOutputFormat=\"opencover\" /p:CoverletOutput=BuildReports\Coverage\
+- reportgenerator "-reports:BuildReports\Coverage\coverage.opencover.xml" "-targetdir:BuildReports\Coverage" -reporttypes:HTML;HTMLSummary
+```
+
+Once you run commands is completed then open index.html file in BuildReports\Coverage.
+
