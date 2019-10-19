@@ -1,5 +1,24 @@
 # ProductMicroservice
-How to build a simple project with Microservice and write unit test by xUnit and Fluent API.
+Building a ProductMicroservice project and intergate it with some new technologies.
+
+- Integration of GraphQL in this project
+- Running unit test and watching code coverage
+
+## Integration of GraphQL in this project.
+
+You need to install some require external packages for GraphQL as the following:
+
+- [GraphQL](https://www.nuget.org/packages/GraphQL/2.4.0)
+- [GraphQL.Server.Transports.AspNetCore] (https://www.nuget.org/packages/GraphQL.Server.Transports.AspNetCore/3.4.0)
+- [GraphQL.Server.Ui.Playground](https://www.nuget.org/packages/GraphQL.Server.Ui.Playground/3.4.0)
+
+To getting started with GraphQL in ASP .NET Core, visit the [GraphQL ASP.NET Core Tutorial](https://code-maze.com/graphql-asp-net-core-tutorial/)
+
+To test our GraphQL API, we are going to use the GraphQL.UI.Playground tool. So, let's first start our server application and then navigate to the http://localhost:60809/ui/playground address.
+
+<img src="https://i.ibb.co/hZFg5P2/graph-QL-testing.png" alt="Graph-QL-Product" border="0" />
+
+Excellent, we see that everything is working just as it supposed to. As soon as we send our query with id, name, and price of products (which must match the query name we created in the AppQuery file), we get the required result.
 
 ## Running unit test and watching code coverage
 
@@ -28,4 +47,4 @@ If you want to generate report, you can also install the following command.
 
 Once you run commands is completed then open index.html file in BuildReports\Coverage will display as image below.
 
-[<img src="https://i.ibb.co/tJmNTqW/report-code-coverage.png" alt="report-code-coverage" border="0"/>]
+<img src="https://i.ibb.co/tJmNTqW/report-code-coverage.png" alt="report-code-coverage" border="0"/>
