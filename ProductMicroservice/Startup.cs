@@ -16,6 +16,7 @@ using Microsoft.Extensions.Options;
 using ProductMicroservice.DBContexts;
 using ProductMicroservice.GraphQL.GraphQLSchema;
 using ProductMicroservice.Repository;
+using Swashbuckle.AspNetCore.Swagger;
 
 namespace ProductMicroservice
 {
@@ -36,6 +37,12 @@ namespace ProductMicroservice
 
             services.AddTransient<IProductRepository, ProductRepository>();
 
+            // Swwager
+            services.AddSwaggerGen(c =>
+            {
+                c.SwaggerDoc("v1", new Info { Title = "Product Microservice", Version = "v1" });
+            });
+
             // GraphQL
             services.AddScoped<IDependencyResolver>(s => new FuncDependencyResolver(s.GetRequiredService));
             services.AddScoped<AppSchema>();
@@ -51,6 +58,12 @@ namespace ProductMicroservice
             {
                 app.UseDeveloperExceptionPage();
             }
+
+            app.UseSwagger();
+            app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Product Microservice version1");
+            });
 
             app.UseGraphQL<AppSchema>();
             app.UseGraphQLPlayground(options: new GraphQLPlaygroundOptions());
